@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madrid Metro Expansion: A Success Story</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .stat-card {
+            background-color: #1F2937; /* gray-800 */
+            border: 1px solid #374151; /* gray-700 */
+            border-radius: 1rem; /* rounded-2xl */
+            padding: 1.5rem; /* p-6 */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(250, 204, 21, 0.1), 0 10px 10px -5px rgba(250, 204, 21, 0.04);
+        }
+        .stat-card ul {
+            list-style-position: inside;
+            padding-left: 0;
+            margin-top: 0.75rem;
+        }
+        .stat-card ul li {
+            position: relative;
+            padding-left: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        .stat-card ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #FBBF24; /* amber-400 */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <!-- Main Container -->
+    <div class="container mx-auto px-4 py-8 md:py-16">
+
+        <!-- Header -->
+        <header class="text-center mb-12 md:mb-20">
+            <h1 class="text-4xl md:text-6xl font-bold text-yellow-400 mb-2">Madrid's Metro Miracle</h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">How political will, smart engineering, and efficient management built a world-class system against the clock and under budget.</p>
+        </header>
+
+        <!-- Unprecedented Growth Section -->
+        <section class="mb-12 md:mb-20 text-center">
+             <div class="bg-gray-800 rounded-2xl p-8 max-w-4xl mx-auto shadow-lg border border-gray-700">
+                <h2 class="text-2xl md:text-3xl font-semibold text-white mb-4">Unprecedented Growth at Unbeatable Cost</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
+                    <div class="text-center">
+                        <div class="text-5xl md:text-7xl font-bold text-yellow-400">71 mi</div>
+                        <div class="text-sm text-gray-400">1995</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                    <div class="text-center">
+                        <div class="text-5xl md:text-7xl font-bold text-yellow-400">197 mi</div>
+                        <div class="text-sm text-gray-400">2007</div>
+                    </div>
+                </div>
+                <p class="mt-6 text-gray-400 text-lg">The 1995-1999 expansion alone added 35 miles for just **$2.8 billion** (2024 prices)—a cost similar to just *four stations* on London's Jubilee Line Extension.</p>
+            </div>
+        </section>
+
+        <!-- Key Factors Section -->
+        <section class="mb-12 md:mb-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 md:mb-12">The Pillars of Success</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Card 1: Political Drive -->
+                <div class="stat-card">
+                    <div class="flex items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                        <h3 class="text-xl font-semibold">Political Drive & Autonomy</h3>
+                    </div>
+                    <p class="text-gray-400">The regional government held complete control, allowing politicians like Alberto Ruiz-Gallardón to tie their careers to delivering expansions within tight 4-year election cycles.</p>
+                </div>
+
+                <!-- Card 2: Radical Streamlining -->
+                <div class="stat-card">
+                    <div class="flex items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        <h3 class="text-xl font-semibold">Radical Streamlining</h3>
+                    </div>
+                    <p class="text-gray-400">Bureaucracy was minimized to accelerate delivery.</p>
+                    <ul class="text-gray-400 text-sm flex-grow">
+                        <li><b>24-Hour Decisions:</b> Political input was provided almost instantly.</li>
+                        <li><b>5-Month Assessments:</b> Environmental reviews were fast, unlike the UK's 17,912-page reports.</li>
+                        <li><b>Cost-Effective Mitigation:</b> Avoided extreme costs like the UK's £100m bat tunnel for the HS2 railway.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Pragmatic Design -->
+                <div class="stat-card">
+                    <div class="flex items-center mb-4">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01M12 6v-1m0-1V4m0 2.01V5M12 20v-1m0-1v.01M12 18v-1m0-1v.01M12 16v-1m0-1v.01M12 14v-1m0-1v.01M12 12v-1m0-1v.01M12 10V9" /></svg>
+                        <h3 class="text-xl font-semibold">Pragmatic Design</h3>
+                    </div>
+                    <p class="text-gray-400">Functionality and replicability were prioritized over architectural statements.</p>
+                     <ul class="text-gray-400 text-sm flex-grow">
+                        <li><b>Copy-Paste Stations:</b> Standardized designs saved time and money. Cost per station was ~£60m vs. London's £217m.</li>
+                        <li><b>Proven Tech:</b> Used reliable fixed-block signaling, opening just 3 weeks after construction (vs. 3-year delay for London's Elizabeth Line).</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4: 24/7 Construction -->
+                <div class="stat-card">
+                    <div class="flex items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" /></svg>
+                        <h3 class="text-xl font-semibold">24/7 Construction</h3>
+                    </div>
+                    <p class="text-gray-400">Eight tunnel boring machines worked around the clock. Project head Manuel Melis Maynar convinced the public this meant faster completion and less overall disruption.</p>
+                </div>
+
+                <!-- Card 5: Value-Focused Procurement -->
+                <div class="stat-card">
+                    <div class="flex items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <h3 class="text-xl font-semibold">Value-Focused Procurement</h3>
+                    </div>
+                    <p class="text-gray-400">Public company Mintra weighted bid price at only 30%. The other 70% was based on time, merit, and experience, avoiding the "lowest-bid" trap that plagued projects like Boston's Big Dig.</p>
+                </div>
+
+                <!-- Card 6: Building In-House Expertise -->
+                <div class="stat-card">
+                    <div class="flex items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                        <h3 class="text-xl font-semibold">Building In-House Expertise</h3>
+                    </div>
+                    <p class="text-gray-400">Engineers learned from others' mistakes (like London's Heathrow link collapse) and invested in upfront analysis. The best teams were rehired, improving efficiency with each project.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outcomes Section -->
+        <section class="mb-12 md:mb-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 md:mb-12">A Lasting Legacy</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="stat-card">
+                    <div class="text-4xl font-bold text-yellow-400 mb-2">75%</div>
+                    <h3 class="text-xl font-semibold mb-2">Very Satisfied</h3>
+                    <p class="text-gray-400">Passenger satisfaction rating, far surpassing systems like New York's (56%).</p>
+                </div>
+                <div class="stat-card">
+                    <div class="text-4xl font-bold text-yellow-400 mb-2">210</div>
+                    <h3 class="text-xl font-semibold mb-2">Trips Per Resident</h3>
+                    <p class="text-gray-400">Annual ridership in 2019, surpassing London and NYC per capita and proving its deep integration into city life.</p>
+                </div>
+                <div class="stat-card">
+                    <div class="text-4xl font-bold text-yellow-400 mb-2">+8%</div>
+                    <h3 class="text-xl font-semibold mb-2">Property Value</h3>
+                    <p class="text-gray-400">Increase for homes near new MetroSur stations, showcasing clear economic benefits.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lessons Section -->
+        <section>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 md:mb-12">Lessons for the World</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-yellow-400">1. Empower City-Level Control</h3>
+                    <p class="text-gray-400 text-sm mt-1">Give regional authorities full power over planning, funding, and construction to create clear accountability.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-yellow-400">2. Streamline Ruthlessly</h3>
+                    <p class="text-gray-400 text-sm mt-1">Cut bureaucratic red tape in permitting and environmental reviews to enable speed.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-yellow-400">3. Make Smart Trade-offs</h3>
+                    <p class="text-gray-400 text-sm mt-1">Prioritize functionality and proven technology over costly architectural statements and complex, untested systems.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-yellow-400">4. Build State Capacity</h3>
+                    <p class="text-gray-400 text-sm mt-1">Invest in and retain in-house expertise to learn lessons, improve efficiency, and manage projects effectively.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 md:mt-20 pt-8 border-t border-gray-700">
+            <p class="text-gray-400">The Madrid model proves that with the right strategy, cities can build "good, fast, and cheap" public transit.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
